@@ -4,7 +4,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon chatapp-be/server.js"
+    "server": "nodemon backend/server.js",
+		"start": "node backend/server.js",
+		"build": "npm install && npm install --prefix chatapp-fe && npm run build --prefix chatapp-fe"
   },
   "keywords": [],
   "author": "",
